@@ -245,19 +245,14 @@ Therefore it is advisable to let the router respond in multicast (or maybe both?
 -->
 </t>
 
-<t>There is no other SLAAC information that requires or would benefit from this kind of "active probing".
-
-<list style="hanging">
-<t>TODO: We should either state a very good reason to specialcase DNS timeouts or deprecate Router Solicitations in RFC 6106 entirely. Deprecation is the more favorable option in our opinion.</t>
-</list>
-
-</t>
+<t>There is no other SLAAC information that requires or would benefit from this kind of "active probing".</t>
 
 
 <t>This approach does not mitigate the potential 'network configuration oscillation' problem described in <xref target="change-semantics"/>.</t>
 
         </list>
 
+<t>NOTE: We should either state a very good reason to specialcase DNS timeouts or deprecate Router Solicitations in RFC 6106 entirely. Deprecation is the more favorable option in our opinion.</t>
     </section>
 
     <section title="Sanitize the received RDNSS/DNSSL 'Lifetime' Values" anchor="sanitize-lifetime">
